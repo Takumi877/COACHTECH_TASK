@@ -1,0 +1,463 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+/* -----header----- */
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+/* -----eyecatch----- */
+#eyecatch {
+  height: 600px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#eyecatch .main-message {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+#eyecatch .news-logo {
+  padding: 20px 50px;
+  background-color: #000;
+  color: #fff;
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#eyecatch .news-text {
+  text-align: left;
+  padding: 20px 50px;
+  background-color: #fff;
+  color: #000;
+  width: 500px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+}
+
+/* ------about----- */
+#about {
+  background: black;
+  color: #fff;
+  width: auto;
+  padding: 50px;
+  position: relative;
+}
+
+#about .about-wrap {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  padding: 0 250px;
+}
+
+#about .about-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+#about .about-text {
+  font-size: 14px;
+}
+
+.button {
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #000;
+  margin: 30px 0;
+}
+
+#about img {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  margin: -220px 700px;
+}
+
+
+/* -----service----- */
+#business {
+  position: relative;
+  background: rgb(211, 207, 207);
+  width: auto;
+  height: 1200px;
+  margin-top: 130px;
+}
+
+#business .section-title {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0 40px 0;
+}
+
+#business .business-card {
+  position: relative;
+  margin-top: 50px;
+  left: 15%;
+  width: 600px;
+  padding: 50px 30px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #e9eaea;
+  transition: 0.3s;
+}
+
+.business-card h3 {
+  font-size: 16.5px;
+  padding: 10px 0;
+}
+
+.business-card p {
+  font-size: 16.5px;
+  padding: 10px 0;
+}
+
+.business-card .button {
+  margin-left: 75%;
+}
+
+#business .img1 {
+  margin: -28% 0 0 640px;
+  width: 800px;
+}
+
+#business .business-cards {
+  position: relative;
+  margin-top: 100px;
+  left: 40%;
+  width: 600px;
+  padding: 50px 30px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #e9eaea;
+  transition: 0.3s;
+}
+
+.business-cards h3 {
+  font-size: 16.5px;
+  padding: 10px 0;
+}
+
+.business-cards p {
+  font-size: 16.5px;
+  padding: 10px 0;
+}
+
+.business-cards .button {
+  margin-left: 75%;
+}
+
+#business .img2 {
+  margin: -28% 0 0 0;
+  width: 800px;
+}
+
+/* ------company------ */
+.contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  color: #fff;
+}
+
+#company {
+  position: relative;
+  background-image: url(../img/company.jpeg) ;
+  background-size: cover;
+  background-position: center;
+  width: 650px;
+  height: 200px;
+}
+
+#company .company-title {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 24px; 
+}
+
+#company .company-detail {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* ------recruit------- */
+#recruit {
+  position: relative;
+  background-image: url(../img/recruit.jpg) ;
+  background-size: cover;
+  background-position: center;
+  width: 650px;
+  height: 200px;
+}
+
+#recruit .recruit-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 24px; 
+}
+
+#recruit .recruit-detail {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+/* -------FAQ------ */
+#FAQ {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  height: 100px;
+  width: 800px;
+  margin: 130px 30% 130px 23%;
+}
+
+.FAQ-title {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  top: 40%;
+  left: 30px;
+}
+
+.FAQ-detail {
+  font-size: 12px;
+  position: absolute;
+  top: 45%;
+}
+/* ------contact------- */
+#contact {
+  height: 600px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#contact .contact-text {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  color: #fff;
+  text-align: center;
+}
+
+#contact .contact-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#contact .contact-detail {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+#contact .contact-subtitle {
+  margin: 20px 0;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+#contact .contact-subtext {
+  margin-top: 25px;
+  font-size: 10px;
+}
+
+#contact .button {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+}
+/* ------footer------ */
+#footer {
+  width: 100%;
+  background: #000;
+  color: #fff; 
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer small {
+  display: flex;
+  align-items: center;
+  margin-left: 35%;
+  font-size: 16px;
+}
