@@ -214,7 +214,8 @@ input, select {
   position: absolute;
   z-index: 1;
   width: 500px;
-  margin: -220px 700px;
+  top: 70px;
+  right: 190px;
 }
 
 
@@ -227,13 +228,13 @@ input, select {
   margin-top: 130px;
 }
 
-#business .section-title {
+#business h2 {
   text-align: center;
   font-size: 24px;
   padding: 20px 0 40px 0;
 }
 
-#business .business-card {
+#business .card-camera {
   position: relative;
   margin-top: 50px;
   left: 15%;
@@ -243,58 +244,51 @@ input, select {
   color: #333;
   border: 1px solid #e9eaea;
   transition: 0.3s;
+  z-index: 2;
 }
 
-.business-card h3 {
+#business h3 {
   font-size: 16.5px;
   padding: 10px 0;
 }
 
-.business-card p {
+#business p {
   font-size: 16.5px;
   padding: 10px 0;
 }
 
-.business-card .button {
+#business .button {
   margin-left: 75%;
 }
 
-#business .img1 {
-  margin: -28% 0 0 640px;
+#business .img-camera {
+  position: absolute;
   width: 800px;
+  top: 50px;
+  right: 0;
+  z-index: 1;
 }
 
-#business .business-cards {
+#business .card-wave {
   position: relative;
-  margin-top: 100px;
-  left: 40%;
+  margin: 350px 0 0 400px;
+  left: 15%;
   width: 600px;
   padding: 50px 30px;
   background-color: white;
   color: #333;
   border: 1px solid #e9eaea;
   transition: 0.3s;
+  z-index: 2;
 }
 
-.business-cards h3 {
-  font-size: 16.5px;
-  padding: 10px 0;
-}
-
-.business-cards p {
-  font-size: 16.5px;
-  padding: 10px 0;
-}
-
-.business-cards .button {
-  margin-left: 75%;
-}
-
-#business .img2 {
-  margin: -28% 0 0 0;
+#business .img-wave {
+  position: absolute;
   width: 800px;
+  top: 750px;
+  left: 0px;
+  z-index: 1;
 }
-
 /* ------company------ */
 .contents {
   display: flex;
@@ -387,8 +381,9 @@ input, select {
 
 #contact .contact-text {
   position: absolute;
-  top: 30%;
-  left: 22%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   color: #fff;
   text-align: center;
 }
