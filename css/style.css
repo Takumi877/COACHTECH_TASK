@@ -224,7 +224,7 @@ input, select {
   position: relative;
   background: rgb(211, 207, 207);
   width: auto;
-  height: 1200px;
+  height: 1500px;
   margin-top: 130px;
 }
 
@@ -264,7 +264,7 @@ input, select {
 #business .img-camera {
   position: absolute;
   width: 800px;
-  top: 50px;
+  top: 55px;
   right: 0;
   z-index: 1;
 }
