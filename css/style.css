@@ -354,7 +354,7 @@ input, select {
   color: #fff;
   height: 100px;
   width: 800px;
-  margin: 130px 30% 130px 23%;
+  margin: 130px auto;
 }
 
 .FAQ-title {
@@ -369,6 +369,7 @@ input, select {
   font-size: 12px;
   position: absolute;
   top: 45%;
+  margin: 0 auto;
 }
 /* ------contact------- */
 #contact {
